@@ -5,7 +5,7 @@
                     <l7:Name>proto</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f167b2e9</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-11-09T20:58:31.859Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="0000000000000000ffffffffffffec76" id="6b799f4eefdfb11df8800690f167b2e9" version="0">
                             <l7:Name>proto</l7:Name>
@@ -13,10 +13,1653 @@
                     </l7:Resource>
                 </l7:Item>
                 <l7:Item>
+                    <l7:Name>swa.error.codes.json</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f1694879</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="6b799f4eefdfb11df8800690f1694879" version="0">
+                            <l7:Name>swa.error.codes.json</l7:Name>
+                            <l7:Value>{
+   &quot;http&quot;:{
+      &quot;400&quot;:{
+         &quot;statusText&quot;:&quot;BAD_REQUEST&quot;
+      },
+      &quot;401&quot;:{
+         &quot;statusText&quot;:&quot;UNAUTHORIZED&quot;
+      },
+      &quot;403&quot;:{
+         &quot;statusText&quot;:&quot;FORBIDDEN&quot;
+      },
+      &quot;404&quot;:{
+         &quot;statusText&quot;:&quot;NOT_FOUND&quot;
+      },
+      &quot;409&quot;:{
+         &quot;statusText&quot;:&quot;CONFLICT&quot;
+      },
+      &quot;500&quot;:{
+         &quot;statusText&quot;:&quot;INTERNAL_SERVER_ERROR&quot;
+      },
+      &quot;503&quot;:{
+         &quot;statusText&quot;:&quot;SERVICE_UNAVAILABLE&quot;
+      },
+      &quot;504&quot;:{
+         &quot;statusText&quot;:&quot;GATEWAY_TIMEOUT&quot;
+      }
+   },
+   &quot;swa&quot;:{
+      &quot;101&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error Completing Request&quot;
+      },
+      &quot;102&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Unable To Process Request - Invalid API Key&quot;
+      },
+      &quot;103&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable To Process Request - Account plan limit exceeded&quot;
+      },
+      &quot;104&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable To Process Request - API plan limit exceeded&quot;
+      },
+      &quot;105&quot;:{
+         &quot;status&quot;:&quot;404&quot;,
+         &quot;message&quot;:&quot;Service Not Found&quot;
+      },
+      &quot;106&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Client Certificate Authentication Error&quot;
+      },
+      &quot;107&quot;:{
+         &quot;status&quot;:&quot;504&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Timeout&quot;
+      },
+      &quot;108&quot;:{
+         &quot;status&quot;:&quot;404&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Host Not Found&quot;
+      },
+      &quot;109&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Bad URL&quot;
+      },
+      &quot;110&quot;:{
+         &quot;status&quot;:&quot;504&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Connection Timeout&quot;
+      },
+      &quot;111&quot;:{
+         &quot;status&quot;:&quot;504&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Read Timeout&quot;
+      },
+      &quot;112&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error Completing Request - Cannot Read URL Enforcement Configuration&quot;
+      },
+      &quot;113&quot;:{
+         &quot;status&quot;:&quot;404&quot;,
+         &quot;message&quot;:&quot;Blocked by URI Blacklist Enforcer&quot;
+      },
+      &quot;120&quot;:{
+         &quot;status&quot;:&quot;416&quot;,
+         &quot;message&quot;:&quot;PLEASE DO NOT USE 120 gw error code as it could be confused with the 120 tier code. Just skip this number&quot;
+      },
+      &quot;200&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;OTK Internal Server Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;201&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Unsupported Grant Type&quot;,
+         &quot;otk&quot;:&quot;unsupported_grant_type&quot;
+      },
+      &quot;202&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Unsupported Response Type (no id_token)&quot;,
+         &quot;otk&quot;:&quot;unsupported_response_type&quot;
+      },
+      &quot;203&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Unsupported Response Type (no swa_token)&quot;,
+         &quot;otk&quot;:&quot;unsupported_response_type&quot;
+      },
+      &quot;204&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Client is not authorized to perform the request&quot;,
+         &quot;otk&quot;:&quot;unauthorized_client&quot;
+      },
+      &quot;205&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Client is not authorized to perform a request with the given grant type&quot;,
+         &quot;otk&quot;:&quot;unauthorized_client&quot;
+      },
+      &quot;206&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Expired Leapfrog Token&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;207&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Authentication Error, Internal Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;208&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to create Leapfrog Token, Unknown Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;209&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to complete response (unknown error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;210&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unkown Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;211&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Refresh token not found in DB&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;212&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Refresh Token Expired&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;213&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Unable to complete refresh request (refresh grant type)&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;214&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to complete refresh request (unknown error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;215&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid or missing access token&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;216&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid or missing id token&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;217&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Id token, access token mismatch&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;218&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;219&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Missing Origin Header&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;220&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Host Not Found&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;221&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Bad URL&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;222&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Connection Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;223&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Read Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;224&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Security Error (TLS)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;225&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown Route Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;226&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Authentication Error (error relayed for downstream service)&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;227&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;503 Downstream Error (error relayed for downstream service)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;228&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;229&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Encrypt is not supported for ID Tokens&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;231&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to create an ID Token (Unknown Error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;232&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Revoked or Expired Token (Refresh Token)&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;233&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error Storing (access,refresh)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;234&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error Storing (access)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;235&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error Generating a JWT Payload&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;236&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error while signing JWT&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;237&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate key required for operation&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;238&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error while encrypting JWT&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;239&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unkable to generate a Leapfrog Token&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;240&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Reserved&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;241&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate an OAuth TOken (unkown error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;242&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid Client&quot;,
+         &quot;otk&quot;:&quot;invalid_client&quot;
+      },
+      &quot;243&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Id Token Not Found&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;244&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Error Decrypting Token&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;245&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Error Verifying Signature&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;246&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Token validation error (missing exp)&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;247&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Id Token Expired&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;248&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Error while verifying signature on JWT&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;249&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate key required for operation&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;250&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Error whilde decoding JWT&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;251&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;252&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Reserved&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;253&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Customer Number Not Provided&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;254&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot; Web Service Provider Not Provided&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;255&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Missing Origin Header&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;256&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Host Not Found&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;257&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Bad URL&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;258&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Connection Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;259&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Read Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;260&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Security Error (SSL)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;261&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown Route Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;262&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Downstream error (Error relayed back out)&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;263&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;503 Downstream&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;264&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown Error&quot;,
+         &quot;otk&quot;:&quot;server_errir&quot;
+      },
+      &quot;265&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to resolve external service&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;266&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Host Not Found&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;267&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Bad URL&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;268&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Connection Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;269&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Read Timeout&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;270&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Security Error (SSL)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;271&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unknown Route Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;272&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Downstream error (400-500)&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;273&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;503 Downstream error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;274&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to retrieve customer information (Unkown Error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;275&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Access Token Not Found; DB Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;276&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Acces Token Not Found&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;277&quot;:{
+         &quot;status&quot;:&quot;409&quot;,
+         &quot;message&quot;:&quot;Id Token Expired&quot;,
+         &quot;otk&quot;:&quot;expired_token&quot;
+      },
+      &quot;278&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Access Token Validation Failed&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;279&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Access Token Validation Failed (Not Found)&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;280&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Login Time Expired&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;281&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to validate (Unknown Error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;282&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;HTTP Content Type Does Not Match Required&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;283&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;HTTP Method Not Allowed&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;284&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Required Parameter not found or empty&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;285&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Required Single Value Parameter found with multiple values&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;286&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Required Header not found or is empty&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;287&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Required Cookie not found or is empty&quot;,
+         &quot;otk&quot;:&quot;invalid_request&quot;
+      },
+      &quot;288&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid Client&quot;,
+         &quot;otk&quot;:&quot;invalid_client&quot;
+      },
+      &quot;289&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid Scope&quot;,
+         &quot;otk&quot;:&quot;invalid_scope&quot;
+      },
+      &quot;290&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate key required for operation&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;291&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate key required for operation&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;292&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Token Not Found&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;293&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Id Token Not Valid&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;294&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to validate Token&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;295&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;JDBC Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;296&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Missing parameters, resource_owner, azp, jwt, iss required&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;297&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;JWT Signature Exceeds 512 bytes&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;298&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;JDBC Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;299&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;JDBC Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;300&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;No required parameter was provided for removing an id_token&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;301&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;JDBC Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;302&quot;:{
+         &quot;status&quot;:&quot;409&quot;,
+         &quot;message&quot;:&quot;Unable to validate Id Token; access_token not required&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;303&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Refresh Token Not Found, DB Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;304&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error while signing ID Token&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;305&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to generate key required for operation&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;306&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Error while encrypting ID Token&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;307&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;CyberArk Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;308&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to sign/encrypt an ID Token (unknown error)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;309&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to retrieve client ID; Unknown DB Error&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;311&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Unable to retrieve configuration or version information&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;312&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid Scope&quot;,
+         &quot;otk&quot;:&quot;invalid_scope&quot;
+      },
+      &quot;313&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Invalid Scope&quot;,
+         &quot;otk&quot;:&quot;invalid_scope&quot;
+      },
+      &quot;323&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;500 type downstream error, (error relayed for downstream service)&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;324&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Not Authorized&quot;,
+         &quot;otk&quot;:&quot;server_error&quot;
+      },
+      &quot;325&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Authentication Error&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;326&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Authentication Error&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;327&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Authentication Error&quot;,
+         &quot;otk&quot;:&quot;invalid_grant&quot;
+      },
+      &quot;328&quot;:{
+         &quot;status&quot;:&quot;401&quot;,
+         &quot;message&quot;:&quot;Access Token Validation Failed&quot;,
+         &quot;otk&quot;:&quot;invalid_token&quot;
+      },
+      &quot;400&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;PLEASE DO NOT USE 4XX gw error code as it could be confused with the 4XX Status code. Just skip 4XX-499&quot;
+      },
+      &quot;500&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;PLEASE DO NOT USE 5XX gw error code as it could be confused with the 5XX Status code. Just skip 5XX-599&quot;
+      },
+      &quot;600&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Required Parameter not found, empty or invalid format&quot;
+      },
+      &quot;601&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;Booking.com error&quot;
+      },
+      &quot;602&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Not Authorized&quot;
+      },
+      &quot;603&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;503 from Booking.com&quot;
+      },
+      &quot;604&quot;:{
+         &quot;status&quot;:&quot;400&quot;,
+         &quot;message&quot;:&quot;4XX from Booking.com&quot;
+      },
+      &quot;605&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;5XX from Booking.com&quot;
+      },
+      &quot;606&quot;:{
+         &quot;status&quot;:&quot;500&quot;,
+         &quot;message&quot;:&quot;Failed to retreive Booking.com password from CyberArk&quot;
+      }
+   }
+}</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>swa.gateway.tier.identifier</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f16948c7</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="6b799f4eefdfb11df8800690f16948c7" version="0">
+                            <l7:Name>swa.gateway.tier.identifier</l7:Name>
+                            <l7:Value>120</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>SWA JSON Error Response</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f169481a</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.562Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="96f91b8a-68bb-437c-ba69-3f3734af542f" id="6b799f4eefdfb11df8800690f169481a" version="4">
+                            <l7:PolicyDetail folderId="6b799f4eefdfb11df8800690f167b2e9" guid="96f91b8a-68bb-437c-ba69-3f3734af542f" id="6b799f4eefdfb11df8800690f169481a" version="4">
+<l7:Name>SWA JSON Error Response</l7:Name>
+<l7:PolicyType>Include</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>5</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;wsp:Policy xmlns:L7p=&quot;http://www.layer7tech.com/ws/policy&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2002/12/policy&quot;&gt;
+    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=&quot;JHtnYXRld2F5LnN3YS5lcnJvci5jb2Rlcy5qc29ufQ==&quot;/&gt;
+            &lt;L7p:ContentType stringValue=&quot;application/json; charset=utf-8&quot;/&gt;
+            &lt;L7p:DataType variableDataType=&quot;message&quot;/&gt;
+            &lt;L7p:VariableToSet stringValue=&quot;swaErrorCodes&quot;/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:ComparisonAssertion&gt;
+                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                    &lt;L7p:Expression1 stringValue=&quot;${gateway.swa.suppress.json.error.message.description}&quot;/&gt;
+                    &lt;L7p:Expression2 stringValue=&quot;true&quot;/&gt;
+                    &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                        &lt;L7p:item binary=&quot;included&quot;&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:RightValue stringValue=&quot;true&quot;/&gt;
+                        &lt;/L7p:item&gt;
+                    &lt;/L7p:Predicates&gt;
+                &lt;/L7p:ComparisonAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;gatewayErrorMessage&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;infoListValue&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:EvaluateJsonPathExpressionV2&gt;
+                    &lt;L7p:Expression stringValue=&quot;swa.${gatewayErrorCode}.message&quot;/&gt;
+                    &lt;L7p:OtherTargetMessageVariable stringValue=&quot;swaErrorCodes&quot;/&gt;
+                    &lt;L7p:Target target=&quot;OTHER&quot;/&gt;
+                    &lt;L7p:VariablePrefix stringValue=&quot;message&quot;/&gt;
+                &lt;/L7p:EvaluateJsonPathExpressionV2&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;JHttZXNzYWdlLnJlc3VsdH0=&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;gatewayErrorMessage&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:SetVariable&gt;
+                &lt;L7p:Base64Expression stringValue=&quot;VW5rbm93biBFcnJvcg==&quot;/&gt;
+                &lt;L7p:VariableToSet stringValue=&quot;gatewayErrorMessage&quot;/&gt;
+            &lt;/L7p:SetVariable&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:EvaluateJsonPathExpressionV2&gt;
+                    &lt;L7p:Expression stringValue=&quot;swa.${gatewayErrorCode}.status&quot;/&gt;
+                    &lt;L7p:OtherTargetMessageVariable stringValue=&quot;swaErrorCodes&quot;/&gt;
+                    &lt;L7p:Target target=&quot;OTHER&quot;/&gt;
+                    &lt;L7p:VariablePrefix stringValue=&quot;status&quot;/&gt;
+                &lt;/L7p:EvaluateJsonPathExpressionV2&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;JHtzdGF0dXMucmVzdWx0fQ==&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;httpStatusCode&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:EvaluateJsonPathExpressionV2&gt;
+                    &lt;L7p:Expression stringValue=&quot;http.${httpStatusCode}.statusText&quot;/&gt;
+                    &lt;L7p:OtherTargetMessageVariable stringValue=&quot;swaErrorCodes&quot;/&gt;
+                    &lt;L7p:Target target=&quot;OTHER&quot;/&gt;
+                    &lt;L7p:VariablePrefix stringValue=&quot;statusText&quot;/&gt;
+                &lt;/L7p:EvaluateJsonPathExpressionV2&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;JHtzdGF0dXNUZXh0LnJlc3VsdH0=&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;httpStatusMessage&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;NTAw&quot;/&gt;
+                    &lt;L7p:DataType variableDataType=&quot;int&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;httpStatusCode&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;SU5URVJOQUxfU0VSVkVSX0VSUk9S&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;httpStatusMessage&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+            &lt;/wsp:All&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=&quot;JHtodHRwU3RhdHVzQ29kZX0=&quot;/&gt;
+            &lt;L7p:DataType variableDataType=&quot;int&quot;/&gt;
+            &lt;L7p:VariableToSet stringValue=&quot;httpStatusCode&quot;/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:ExportVariables&gt;
+            &lt;L7p:ExportedVars stringArrayValue=&quot;included&quot;&gt;
+                &lt;L7p:item stringValue=&quot;gatewayerrorcode&quot;/&gt;
+                &lt;L7p:item stringValue=&quot;httpStatusCode&quot;/&gt;
+            &lt;/L7p:ExportedVars&gt;
+        &lt;/L7p:ExportVariables&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=&quot;eyJjb2RlIjoke2h0dHBTdGF0dXNDb2RlfSR7Z2F0ZXdheS5zd2EuZ2F0ZXdheS50aWVyLmlkZW50aWZpZXJ9JHtnYXRld2F5RXJyb3JDb2RlfSwibWVzc2FnZSI6IiR7Z2F0ZXdheUVycm9yTWVzc2FnZX0iLCJodHRwU3RhdHVzQ29kZSI6IiR7aHR0cFN0YXR1c01lc3NhZ2V9IiwicmVxdWVzdElkIjoiJHtyZXF1ZXN0Lmh0dHAuaGVhZGVyLmNvcnJlbGF0aW9uSWR9IiwiaW5mb0xpc3QiOlsiJHtpbmZvTGlzdFZhbHVlfSJdfQ==&quot;/&gt;
+            &lt;L7p:VariableToSet stringValue=&quot;jsonErrorMessage&quot;/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:CustomizeErrorResponse&gt;
+            &lt;L7p:Content stringValue=&quot;${jsonErrorMessage}&quot;/&gt;
+            &lt;L7p:ContentType stringValue=&quot;application/json; charset=utf-8&quot;/&gt;
+            &lt;L7p:ExtraHeaders nameValuePairArray=&quot;included&quot;/&gt;
+            &lt;L7p:HttpStatus stringValue=&quot;${httpStatusCode}&quot;/&gt;
+        &lt;/L7p:CustomizeErrorResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>SWA JSON Error Response</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f1694860</l7:Id>
+                    <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.577Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:EncapsulatedAssertion id="6b799f4eefdfb11df8800690f1694860" version="0">
+                            <l7:Name>SWA JSON Error Response</l7:Name>
+                            <l7:Guid>6c09148a-e587-46cc-9ada-29a8b1cd0b8d</l7:Guid>
+                            <l7:PolicyReference id="6b799f4eefdfb11df8800690f169481a" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:EncapsulatedArguments>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>1</l7:Ordinal>
+    <l7:ArgumentName>gatewayErrorCode</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>GatewayErrorCode</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>2</l7:Ordinal>
+    <l7:ArgumentName>infoListValue</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Info List Value</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+                            </l7:EncapsulatedArguments>
+                            <l7:EncapsulatedResults>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>httpStatusCode</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>jsonErrorMessage</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+                            </l7:EncapsulatedResults>
+                            <l7:Properties>
+<l7:Property key="allowTracing">
+    <l7:StringValue>true</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteFolder">
+    <l7:StringValue>internalAssertions</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteIconResourceName">
+    <l7:StringValue>Warning16.png</l7:StringValue>
+</l7:Property>
+<l7:Property key="passMetricsToParent">
+    <l7:StringValue>false</l7:StringValue>
+</l7:Property>
+<l7:Property key="policyGuid">
+    <l7:StringValue>96f91b8a-68bb-437c-ba69-3f3734af542f</l7:StringValue>
+</l7:Property>
+                            </l7:Properties>
+                        </l7:EncapsulatedAssertion>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>swa.messages.logging.include.http.body</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f1694c51</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.577Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="6b799f4eefdfb11df8800690f1694c51" version="0">
+                            <l7:Name>swa.messages.logging.include.http.body</l7:Name>
+                            <l7:Value>false</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>ExplicitAPIRoutingFragment</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f1694a90</l7:Id>
+                    <l7:Type>POLICY</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.643Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:Policy guid="8bde0d1e-b730-43f9-bb59-539f54871bda" id="6b799f4eefdfb11df8800690f1694a90" version="2">
+                            <l7:PolicyDetail folderId="6b799f4eefdfb11df8800690f167b2e9" guid="8bde0d1e-b730-43f9-bb59-539f54871bda" id="6b799f4eefdfb11df8800690f1694a90" version="2">
+<l7:Name>ExplicitAPIRoutingFragment</l7:Name>
+<l7:PolicyType>Include</l7:PolicyType>
+<l7:Properties>
+    <l7:Property key="revision">
+        <l7:LongValue>3</l7:LongValue>
+    </l7:Property>
+    <l7:Property key="soap">
+        <l7:BooleanValue>false</l7:BooleanValue>
+    </l7:Property>
+</l7:Properties>
+                            </l7:PolicyDetail>
+                            <l7:Resources>
+<l7:ResourceSet tag="policy">
+    <l7:Resource type="policy">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;wsp:Policy xmlns:L7p=&quot;http://www.layer7tech.com/ws/policy&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2002/12/policy&quot;&gt;
+    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:CommentAssertion&gt;
+                    &lt;L7p:Comment stringValue=&quot;Must set the following context variables to false to not overwrite Domain and Path of cookies&quot;/&gt;
+                &lt;/L7p:CommentAssertion&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;ZmFsc2U=&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;response.cookie.overwriteDomain&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;ZmFsc2U=&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;response.cookie.overwritePath&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${useOriginalRequest}&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;boolean&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;false&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:AddHeader&gt;
+                            &lt;L7p:HeaderName stringValue=&quot;X-API-Key&quot;/&gt;
+                            &lt;L7p:HeaderValue stringValue=&quot;&quot;/&gt;
+                            &lt;L7p:Operation operation=&quot;REMOVE&quot;/&gt;
+                            &lt;L7p:OtherTargetMessageVariable stringValue=&quot;requestMessage&quot;/&gt;
+                            &lt;L7p:RemoveExisting booleanValue=&quot;true&quot;/&gt;
+                            &lt;L7p:Target target=&quot;OTHER&quot;/&gt;
+                        &lt;/L7p:AddHeader&gt;
+                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                &lt;L7p:SetVariable&gt;
+                                    &lt;L7p:Base64Expression stringValue=&quot;Um91dGVkUmVxdWVzdDoke2h0dHBNZXRob2R9OiR7cm91dGluZ1VSTH0NClJlcXVlc3RIZWFkZXJzOiR7cmVxdWVzdE1lc3NhZ2UuaHR0cC5hbGxoZWFkZXJ2YWx1ZXN9&quot;/&gt;
+                                    &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                                &lt;/L7p:SetVariable&gt;
+                                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                    &lt;L7p:ComparisonAssertion&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:Expression1 stringValue=&quot;${gateway.swa.messages.logging.include.http.body}&quot;/&gt;
+                                    &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                                    &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                    &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;true&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;/L7p:Predicates&gt;
+                                    &lt;/L7p:ComparisonAssertion&gt;
+                                    &lt;L7p:SetVariable&gt;
+                                    &lt;L7p:Base64Expression stringValue=&quot;JHtsb2dTdGF0ZW1lbnR9DQpSZXF1ZXN0Qm9keToke3JlcXVlc3RNZXNzYWdlLm1haW5wYXJ0fQ==&quot;/&gt;
+                                    &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                                    &lt;/L7p:SetVariable&gt;
+                                    &lt;/wsp:All&gt;
+                                    &lt;L7p:TrueAssertion/&gt;
+                                &lt;/wsp:OneOrMore&gt;
+                                &lt;L7p:AuditDetailAssertion&gt;
+                                    &lt;L7p:CustomLoggerSuffix stringValue=&quot;swa.messages.routed&quot;/&gt;
+                                    &lt;L7p:Detail stringValue=&quot;${logStatement}&quot;/&gt;
+                                    &lt;L7p:Level stringValue=&quot;FINE&quot;/&gt;
+                                    &lt;L7p:LoggingOnly booleanValue=&quot;true&quot;/&gt;
+                                &lt;/L7p:AuditDetailAssertion&gt;
+                            &lt;/wsp:All&gt;
+                            &lt;L7p:TrueAssertion/&gt;
+                            &lt;L7p:assertionComment&gt;
+                                &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                    &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;Routed Request Logging.  Wrapped in At least one to prevent this policy error from failing the whole request&quot;/&gt;
+                                    &lt;/L7p:entry&gt;
+                                &lt;/L7p:Properties&gt;
+                            &lt;/L7p:assertionComment&gt;
+                        &lt;/wsp:OneOrMore&gt;
+                        &lt;L7p:CommentAssertion&gt;
+                            &lt;L7p:Comment stringValue=&quot;The follwing &amp;quot;auditCounter&amp;quot; variable MUST be set just before the Routing Assertion to properly get the next audit entry for error handling&quot;/&gt;
+                        &lt;/L7p:CommentAssertion&gt;
+                        &lt;L7p:SetVariable&gt;
+                            &lt;L7p:Base64Expression stringValue=&quot;JHthdWRpdC5kZXRhaWxzLmxlbmd0aH0=&quot;/&gt;
+                            &lt;L7p:VariableToSet stringValue=&quot;auditCounter&quot;/&gt;
+                        &lt;/L7p:SetVariable&gt;
+                        &lt;L7p:HttpRoutingAssertion&gt;
+                            &lt;L7p:ConnectionTimeout stringValue=&quot;${connectionTimeout}&quot;/&gt;
+                            &lt;L7p:CurrentSecurityHeaderHandling intValue=&quot;3&quot;/&gt;
+                            &lt;L7p:FailOnErrorStatus booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:HttpMethod httpMethod=&quot;OTHER&quot;/&gt;
+                            &lt;L7p:HttpMethodAsString stringValue=&quot;${httpMethod}&quot;/&gt;
+                            &lt;L7p:MaxRetries intValue=&quot;1&quot;/&gt;
+                            &lt;L7p:ProtectedServiceUrl stringValue=&quot;${routingURL}&quot;/&gt;
+                            &lt;L7p:ProxyPassword stringValueNull=&quot;null&quot;/&gt;
+                            &lt;L7p:ProxyUsername stringValueNull=&quot;null&quot;/&gt;
+                            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;Cookie&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;SOAPAction&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                &lt;/L7p:Rules&gt;
+                            &lt;/L7p:RequestHeaderRules&gt;
+                            &lt;L7p:RequestMsgSrc stringValue=&quot;requestmessage&quot;/&gt;
+                            &lt;L7p:RequestParamRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;/&gt;
+                            &lt;/L7p:RequestParamRules&gt;
+                            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;Set-Cookie&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                &lt;/L7p:Rules&gt;
+                            &lt;/L7p:ResponseHeaderRules&gt;
+                            &lt;L7p:SamlAssertionVersion intValue=&quot;2&quot;/&gt;
+                            &lt;L7p:Timeout stringValue=&quot;${readTimeout}&quot;/&gt;
+                            &lt;L7p:TlsCipherSuites stringValue=&quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;/&gt;
+                            &lt;L7p:TlsVersion stringValue=&quot;TLSv1.2&quot;/&gt;
+                        &lt;/L7p:HttpRoutingAssertion&gt;
+                        &lt;L7p:assertionComment&gt;
+                            &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;LEFT.COMMENT&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;use requestMessage&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                            &lt;/L7p:Properties&gt;
+                        &lt;/L7p:assertionComment&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${useOriginalRequest}&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;boolean&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;true&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:AddHeader&gt;
+                            &lt;L7p:HeaderName stringValue=&quot;X-API-Key&quot;/&gt;
+                            &lt;L7p:HeaderValue stringValue=&quot;&quot;/&gt;
+                            &lt;L7p:Operation operation=&quot;REMOVE&quot;/&gt;
+                            &lt;L7p:RemoveExisting booleanValue=&quot;true&quot;/&gt;
+                        &lt;/L7p:AddHeader&gt;
+                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                &lt;L7p:SetVariable&gt;
+                                    &lt;L7p:Base64Expression stringValue=&quot;Um91dGVkUmVxdWVzdDoke2h0dHBNZXRob2R9OiR7cm91dGluZ1VSTH0NClJlcXVlc3RIZWFkZXJzOiR7cmVxdWVzdC5odHRwLmFsbGhlYWRlcnZhbHVlc30=&quot;/&gt;
+                                    &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                                &lt;/L7p:SetVariable&gt;
+                                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                    &lt;L7p:ComparisonAssertion&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:Expression1 stringValue=&quot;${gateway.swa.messages.logging.include.http.body}&quot;/&gt;
+                                    &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                                    &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                    &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;true&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;/L7p:Predicates&gt;
+                                    &lt;/L7p:ComparisonAssertion&gt;
+                                    &lt;L7p:SetVariable&gt;
+                                    &lt;L7p:Base64Expression stringValue=&quot;JHtsb2dTdGF0ZW1lbnR9DQpSZXF1ZXN0Qm9keToke3JlcXVlc3QubWFpbnBhcnR9&quot;/&gt;
+                                    &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                                    &lt;/L7p:SetVariable&gt;
+                                    &lt;/wsp:All&gt;
+                                    &lt;L7p:TrueAssertion/&gt;
+                                &lt;/wsp:OneOrMore&gt;
+                                &lt;L7p:AuditDetailAssertion&gt;
+                                    &lt;L7p:CustomLoggerSuffix stringValue=&quot;swa.messages.routed&quot;/&gt;
+                                    &lt;L7p:Detail stringValue=&quot;${logStatement}&quot;/&gt;
+                                    &lt;L7p:Level stringValue=&quot;FINE&quot;/&gt;
+                                    &lt;L7p:LoggingOnly booleanValue=&quot;true&quot;/&gt;
+                                &lt;/L7p:AuditDetailAssertion&gt;
+                            &lt;/wsp:All&gt;
+                            &lt;L7p:TrueAssertion/&gt;
+                            &lt;L7p:assertionComment&gt;
+                                &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                    &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;Routed Request Logging.  Wrapped in At least one to prevent this policy error from failing the whole request&quot;/&gt;
+                                    &lt;/L7p:entry&gt;
+                                &lt;/L7p:Properties&gt;
+                            &lt;/L7p:assertionComment&gt;
+                        &lt;/wsp:OneOrMore&gt;
+                        &lt;L7p:CommentAssertion&gt;
+                            &lt;L7p:Comment stringValue=&quot;The follwing &amp;quot;auditCounter&amp;quot; variable MUST be set just before the Routing Assertion to properly get the next audit entry for error handling&quot;/&gt;
+                        &lt;/L7p:CommentAssertion&gt;
+                        &lt;L7p:SetVariable&gt;
+                            &lt;L7p:Base64Expression stringValue=&quot;JHthdWRpdC5kZXRhaWxzLmxlbmd0aH0=&quot;/&gt;
+                            &lt;L7p:VariableToSet stringValue=&quot;auditCounter&quot;/&gt;
+                        &lt;/L7p:SetVariable&gt;
+                        &lt;L7p:HttpRoutingAssertion&gt;
+                            &lt;L7p:ConnectionTimeout stringValue=&quot;${connectionTimeout}&quot;/&gt;
+                            &lt;L7p:CurrentSecurityHeaderHandling intValue=&quot;3&quot;/&gt;
+                            &lt;L7p:FailOnErrorStatus booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:HttpMethod httpMethod=&quot;OTHER&quot;/&gt;
+                            &lt;L7p:HttpMethodAsString stringValue=&quot;${httpMethod}&quot;/&gt;
+                            &lt;L7p:MaxRetries intValue=&quot;1&quot;/&gt;
+                            &lt;L7p:ProtectedServiceUrl stringValue=&quot;${routingURL}&quot;/&gt;
+                            &lt;L7p:ProxyPassword stringValueNull=&quot;null&quot;/&gt;
+                            &lt;L7p:ProxyUsername stringValueNull=&quot;null&quot;/&gt;
+                            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;Cookie&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;SOAPAction&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                &lt;/L7p:Rules&gt;
+                            &lt;/L7p:RequestHeaderRules&gt;
+                            &lt;L7p:RequestParamRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;/&gt;
+                            &lt;/L7p:RequestParamRules&gt;
+                            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
+                                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
+                                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
+                                    &lt;L7p:Name stringValue=&quot;Set-Cookie&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                &lt;/L7p:Rules&gt;
+                            &lt;/L7p:ResponseHeaderRules&gt;
+                            &lt;L7p:SamlAssertionVersion intValue=&quot;2&quot;/&gt;
+                            &lt;L7p:Timeout stringValue=&quot;${readTimeout}&quot;/&gt;
+                            &lt;L7p:TlsCipherSuites stringValue=&quot;TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256&quot;/&gt;
+                            &lt;L7p:TlsVersion stringValue=&quot;TLSv1.2&quot;/&gt;
+                        &lt;/L7p:HttpRoutingAssertion&gt;
+                        &lt;L7p:assertionComment&gt;
+                            &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;LEFT.COMMENT&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;use request&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                            &lt;/L7p:Properties&gt;
+                        &lt;/L7p:assertionComment&gt;
+                    &lt;/wsp:All&gt;
+                &lt;/wsp:OneOrMore&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;JHtodHRwUm91dGluZy5yZWFzb25Db2RlfQ==&quot;/&gt;
+                    &lt;L7p:DataType variableDataType=&quot;int&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;httpStatusCode&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:SetVariable&gt;
+                            &lt;L7p:Base64Expression stringValue=&quot;Um91dGVkUmVzcG9uc2U6JHtodHRwTWV0aG9kfToke3JvdXRpbmdVUkx9DQpSZXNwb25zZUhlYWRlcnM6JHtyZXNwb25zZS5odHRwLmFsbGhlYWRlcnZhbHVlc30=&quot;/&gt;
+                            &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                        &lt;/L7p:SetVariable&gt;
+                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                                &lt;L7p:ComparisonAssertion&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:Expression1 stringValue=&quot;${gateway.swa.messages.logging.include.http.body}&quot;/&gt;
+                                    &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                                    &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                    &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;true&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                    &lt;/L7p:Predicates&gt;
+                                &lt;/L7p:ComparisonAssertion&gt;
+                                &lt;L7p:SetVariable&gt;
+                                    &lt;L7p:Base64Expression stringValue=&quot;JHtsb2dTdGF0ZW1lbnR9DQpSZXNwb25zZUJvZHk6JHtyZXNwb25zZS5tYWlucGFydH0=&quot;/&gt;
+                                    &lt;L7p:VariableToSet stringValue=&quot;logStatement&quot;/&gt;
+                                &lt;/L7p:SetVariable&gt;
+                            &lt;/wsp:All&gt;
+                            &lt;L7p:TrueAssertion/&gt;
+                        &lt;/wsp:OneOrMore&gt;
+                        &lt;L7p:AuditDetailAssertion&gt;
+                            &lt;L7p:CustomLoggerSuffix stringValue=&quot;swa.messages.routed&quot;/&gt;
+                            &lt;L7p:Detail stringValue=&quot;${logStatement}&quot;/&gt;
+                            &lt;L7p:Level stringValue=&quot;FINE&quot;/&gt;
+                            &lt;L7p:LoggingOnly booleanValue=&quot;true&quot;/&gt;
+                        &lt;/L7p:AuditDetailAssertion&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;L7p:TrueAssertion/&gt;
+                    &lt;L7p:assertionComment&gt;
+                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                &lt;L7p:value stringValue=&quot;Routed Response Logging.  Wrapped in At least one to prevent this policy error from failing the whole request&quot;/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:assertionComment&gt;
+                &lt;/wsp:OneOrMore&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;dHJ1ZQ==&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;routingWasSuccessful&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
+                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:LookupDynamicContextVariables&gt;
+                            &lt;L7p:SourceVariable stringValue=&quot;response.http.header.Access-Control-Allow-Headers&quot;/&gt;
+                            &lt;L7p:TargetDataType variableDataType=&quot;string&quot;/&gt;
+                        &lt;/L7p:LookupDynamicContextVariables&gt;
+                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                            &lt;L7p:ComparisonAssertion&gt;
+                                &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                &lt;L7p:Expression1 stringValue=&quot;${lookup.output}&quot;/&gt;
+                                &lt;L7p:Expression2 stringValue=&quot;X-API-Key&quot;/&gt;
+                                &lt;L7p:MultivaluedComparison multivaluedComparison=&quot;ANY&quot;/&gt;
+                                &lt;L7p:Operator operator=&quot;CONTAINS&quot;/&gt;
+                                &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                    &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:Operator operator=&quot;CONTAINS&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;X-API-Key&quot;/&gt;
+                                    &lt;/L7p:item&gt;
+                                &lt;/L7p:Predicates&gt;
+                            &lt;/L7p:ComparisonAssertion&gt;
+                            &lt;L7p:AddHeader&gt;
+                                &lt;L7p:HeaderName stringValue=&quot;Access-Control-Allow-Headers&quot;/&gt;
+                                &lt;L7p:HeaderValue stringValue=&quot;${response.http.header.Access-Control-Allow-Headers}, X-API-Key&quot;/&gt;
+                                &lt;L7p:RemoveExisting booleanValue=&quot;true&quot;/&gt;
+                                &lt;L7p:Target target=&quot;RESPONSE&quot;/&gt;
+                            &lt;/L7p:AddHeader&gt;
+                        &lt;/wsp:OneOrMore&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;L7p:TrueAssertion/&gt;
+                &lt;/wsp:OneOrMore&gt;
+            &lt;/wsp:All&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                    &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${httpRouting.latency}&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item cardinality=&quot;included&quot;&gt;
+                                    &lt;L7p:Max intValue=&quot;-1&quot;/&gt;
+                                    &lt;L7p:Min intValue=&quot;1&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:SetVariable&gt;
+                            &lt;L7p:Base64Expression stringValue=&quot;JHtyZXF1ZXN0LnJvdXRpbmdUb3RhbFRpbWV9&quot;/&gt;
+                            &lt;L7p:VariableToSet stringValue=&quot;httpRouting.latency&quot;/&gt;
+                        &lt;/L7p:SetVariable&gt;
+                    &lt;/wsp:OneOrMore&gt;
+                    &lt;L7p:assertionComment&gt;
+                        &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue=&quot;RIGHT.COMMENT&quot;/&gt;
+                                &lt;L7p:value stringValue=&quot;Populate httpRouting.latency if it was NOT populated due to the error&quot;/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Properties&gt;
+                    &lt;/L7p:assertionComment&gt;
+                &lt;/wsp:All&gt;
+                &lt;L7p:LookupDynamicContextVariables&gt;
+                    &lt;L7p:FailOnNotFound booleanValue=&quot;false&quot;/&gt;
+                    &lt;L7p:SourceVariable stringValue=&quot;audit.details.${auditCounter}.fullText&quot;/&gt;
+                    &lt;L7p:TargetDataType variableDataType=&quot;string&quot;/&gt;
+                    &lt;L7p:TargetOutputVariablePrefix stringValue=&quot;auditDetail&quot;/&gt;
+                &lt;/L7p:LookupDynamicContextVariables&gt;
+                &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${httpRouting.reasonCode}&quot;/&gt;
+                            &lt;L7p:MultivaluedComparison multivaluedComparison=&quot;ANY&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;-1&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+                            &lt;L7p:Encapsulated&gt;
+                                &lt;L7p:Enabled booleanValue=&quot;false&quot;/&gt;
+                                &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;1a5d9437-c67a-4426-b3a8-73697784e0c8&quot;/&gt;
+                                &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;EnforceMockResponseOnRoutingError&quot;/&gt;
+                            &lt;/L7p:Encapsulated&gt;
+                            &lt;L7p:Encapsulated&gt;
+                                &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                                &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                                &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                                    &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;108&quot;/&gt;
+                                    &lt;/L7p:entry&gt;
+                                    &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;${auditDetail.output}&quot;/&gt;
+                                    &lt;/L7p:entry&gt;
+                                &lt;/L7p:Parameters&gt;
+                            &lt;/L7p:Encapsulated&gt;
+                        &lt;/wsp:OneOrMore&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${httpRouting.reasonCode}&quot;/&gt;
+                            &lt;L7p:MultivaluedComparison multivaluedComparison=&quot;ANY&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;-2&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:Encapsulated&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                            &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;109&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;${auditDetail.output}&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                            &lt;/L7p:Parameters&gt;
+                        &lt;/L7p:Encapsulated&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${httpRouting.reasonCode}&quot;/&gt;
+                            &lt;L7p:MultivaluedComparison multivaluedComparison=&quot;ANY&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;-3&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:Encapsulated&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                            &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;110&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;${auditDetail.output}&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                            &lt;/L7p:Parameters&gt;
+                        &lt;/L7p:Encapsulated&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                        &lt;L7p:ComparisonAssertion&gt;
+                            &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                            &lt;L7p:Expression1 stringValue=&quot;${httpRouting.reasonCode}&quot;/&gt;
+                            &lt;L7p:MultivaluedComparison multivaluedComparison=&quot;ANY&quot;/&gt;
+                            &lt;L7p:Operator operatorNull=&quot;null&quot;/&gt;
+                            &lt;L7p:Predicates predicates=&quot;included&quot;&gt;
+                                &lt;L7p:item dataType=&quot;included&quot;&gt;
+                                    &lt;L7p:Type variableDataType=&quot;string&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                                &lt;L7p:item binary=&quot;included&quot;&gt;
+                                    &lt;L7p:CaseSensitive booleanValue=&quot;false&quot;/&gt;
+                                    &lt;L7p:RightValue stringValue=&quot;-4&quot;/&gt;
+                                &lt;/L7p:item&gt;
+                            &lt;/L7p:Predicates&gt;
+                        &lt;/L7p:ComparisonAssertion&gt;
+                        &lt;L7p:Encapsulated&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                            &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                            &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;111&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                                &lt;L7p:entry&gt;
+                                    &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                                    &lt;L7p:value stringValue=&quot;${auditDetail.output}&quot;/&gt;
+                                &lt;/L7p:entry&gt;
+                            &lt;/L7p:Parameters&gt;
+                        &lt;/L7p:Encapsulated&gt;
+                    &lt;/wsp:All&gt;
+                    &lt;L7p:Encapsulated&gt;
+                        &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                        &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                        &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                                &lt;L7p:value stringValue=&quot;101&quot;/&gt;
+                            &lt;/L7p:entry&gt;
+                            &lt;L7p:entry&gt;
+                                &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                                &lt;L7p:value stringValue=&quot;${auditDetail.output}&quot;/&gt;
+                            &lt;/L7p:entry&gt;
+                        &lt;/L7p:Parameters&gt;
+                    &lt;/L7p:Encapsulated&gt;
+                &lt;/wsp:OneOrMore&gt;
+                &lt;L7p:CustomizeErrorResponse&gt;
+                    &lt;L7p:Content stringValue=&quot;${jsonErrorMessage}&quot;/&gt;
+                    &lt;L7p:ContentType stringValue=&quot;application/json; charset=utf-8&quot;/&gt;
+                    &lt;L7p:ExtraHeaders nameValuePairArray=&quot;included&quot;/&gt;
+                    &lt;L7p:HttpStatus stringValue=&quot;${httpStatusCode}&quot;/&gt;
+                &lt;/L7p:CustomizeErrorResponse&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue=&quot;LEFT.COMMENT&quot;/&gt;
+                            &lt;L7p:value stringValue=&quot;proces routing error&quot;/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue=&quot;LEFT.COMMENT&quot;/&gt;
+                        &lt;L7p:value stringValue=&quot;Routing Logic&quot;/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:ExportVariables&gt;
+            &lt;L7p:ExportedVars stringArrayValue=&quot;included&quot;&gt;
+                &lt;L7p:item stringValue=&quot;httpRouting.latency&quot;/&gt;
+                &lt;L7p:item stringValue=&quot;httpRouting.reasonCode&quot;/&gt;
+                &lt;L7p:item stringValue=&quot;httpRouting.url&quot;/&gt;
+                &lt;L7p:item stringValue=&quot;httpStatusCode&quot;/&gt;
+                &lt;L7p:item stringValue=&quot;jsonErrorMessage&quot;/&gt;
+            &lt;/L7p:ExportedVars&gt;
+        &lt;/L7p:ExportVariables&gt;
+        &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
+            &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:LookupDynamicContextVariables&gt;
+                    &lt;L7p:SourceVariable stringValue=&quot;routingWasSuccessful&quot;/&gt;
+                    &lt;L7p:TargetDataType variableDataType=&quot;string&quot;/&gt;
+                &lt;/L7p:LookupDynamicContextVariables&gt;
+                &lt;L7p:TrueAssertion/&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:FalseAssertion/&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue=&quot;included&quot;&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue=&quot;LEFT.COMMENT&quot;/&gt;
+                        &lt;L7p:value stringValue=&quot;Stop processing if routing failed.&quot;/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+</l7:ResourceSet>
+                            </l7:Resources>
+                        </l7:Policy>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>SWA HTTP(s) Explicit Routing</l7:Name>
+                    <l7:Id>6b799f4eefdfb11df8800690f1694ae7</l7:Id>
+                    <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
+                    <l7:TimeStamp>2018-11-15T14:32:12.644Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:EncapsulatedAssertion id="6b799f4eefdfb11df8800690f1694ae7" version="0">
+                            <l7:Name>SWA HTTP(s) Explicit Routing</l7:Name>
+                            <l7:Guid>6a761656-8c5d-4c8c-a386-d7edb7143958</l7:Guid>
+                            <l7:PolicyReference id="6b799f4eefdfb11df8800690f1694a90" resourceUri="http://ns.l7tech.com/2010/04/gateway-management/policies"/>
+                            <l7:EncapsulatedArguments>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>1</l7:Ordinal>
+    <l7:ArgumentName>routingURL</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Routing URL</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>2</l7:Ordinal>
+    <l7:ArgumentName>httpMethod</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>HTTP method</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>3</l7:Ordinal>
+    <l7:ArgumentName>useOriginalRequest</l7:ArgumentName>
+    <l7:ArgumentType>boolean</l7:ArgumentType>
+    <l7:GuiLabel>Use Original Request</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>4</l7:Ordinal>
+    <l7:ArgumentName>requestMessage</l7:ArgumentName>
+    <l7:ArgumentType>message</l7:ArgumentType>
+    <l7:GuiLabel>Request Message (supply empty message if using original request)</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>5</l7:Ordinal>
+    <l7:ArgumentName>connectionTimeout</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Connection Timeout (in ms)</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+<l7:EncapsulatedAssertionArgument>
+    <l7:Ordinal>6</l7:Ordinal>
+    <l7:ArgumentName>readTimeout</l7:ArgumentName>
+    <l7:ArgumentType>string</l7:ArgumentType>
+    <l7:GuiLabel>Read Timeout (in ms)</l7:GuiLabel>
+    <l7:GuiPrompt>true</l7:GuiPrompt>
+</l7:EncapsulatedAssertionArgument>
+                            </l7:EncapsulatedArguments>
+                            <l7:EncapsulatedResults>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>httpRouting.latency</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>httpRouting.reasonCode</l7:ResultName>
+    <l7:ResultType>int</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>httpRouting.url</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>httpStatusCode</l7:ResultName>
+    <l7:ResultType>int</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+<l7:EncapsulatedAssertionResult>
+    <l7:ResultName>jsonErrorMessage</l7:ResultName>
+    <l7:ResultType>string</l7:ResultType>
+</l7:EncapsulatedAssertionResult>
+                            </l7:EncapsulatedResults>
+                            <l7:Properties>
+<l7:Property key="allowTracing">
+    <l7:StringValue>false</l7:StringValue>
+</l7:Property>
+<l7:Property key="description">
+    <l7:StringValue>Provides HTTP routing allowing the author to use the original request or create a new one.  The author can also dictate the URL and HTTP Method.</l7:StringValue>
+</l7:Property>
+<l7:Property key="paletteFolder">
+    <l7:StringValue>internalAssertions</l7:StringValue>
+</l7:Property>
+<l7:Property key="passMetricsToParent">
+    <l7:StringValue>false</l7:StringValue>
+</l7:Property>
+<l7:Property key="policyGuid">
+    <l7:StringValue>8bde0d1e-b730-43f9-bb59-539f54871bda</l7:StringValue>
+</l7:Property>
+                            </l7:Properties>
+                        </l7:EncapsulatedAssertion>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
                     <l7:Name>/api/*</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f167b593</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-11-09T20:58:31.969Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-15T14:32:12.813Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="6b799f4eefdfb11df8800690f167b593" version="2">
                             <l7:ServiceDetail folderId="6b799f4eefdfb11df8800690f167b2e9" id="6b799f4eefdfb11df8800690f167b593" version="2">
@@ -38,7 +1681,7 @@
         <l7:BooleanValue>false</l7:BooleanValue>
     </l7:Property>
     <l7:Property key="policyRevision">
-        <l7:LongValue>15</l7:LongValue>
+        <l7:LongValue>21</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -53,7 +1696,7 @@
                             </l7:ServiceDetail>
                             <l7:Resources>
 <l7:ResourceSet tag="policy">
-    <l7:Resource type="policy" version="14">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    <l7:Resource type="policy" version="20">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;wsp:Policy xmlns:L7p=&quot;http://www.layer7tech.com/ws/policy&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2002/12/policy&quot;&gt;
     &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
         &lt;L7p:FaultLevel&gt;
@@ -83,11 +1726,29 @@
                 &lt;/L7p:SetVariable&gt;
             &lt;/wsp:All&gt;
             &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
+                &lt;L7p:SetVariable&gt;
+                    &lt;L7p:Base64Expression stringValue=&quot;RmFpbGVkIHRvIHBhcnNlIHJlcXVlc3QgcGF0aDogJHtyZXF1ZXN0LnVybC5wYXRofS4gRXhwZWN0ZWQgZm9ybWF0IG9mOiAvYXBpL2Fpci1vcGVyYXRpb25zL3YxL2Fpci1vcGVyYXRpb25zL2FwaS9haXIvZmxpZ2h0cy9zdGF0dXM=&quot;/&gt;
+                    &lt;L7p:VariableToSet stringValue=&quot;invalidRequestPathDetail&quot;/&gt;
+                &lt;/L7p:SetVariable&gt;
                 &lt;L7p:AuditDetailAssertion&gt;
-                    &lt;L7p:Detail stringValue=&quot;Failed to parse request path: ${request.url.path}. Expected format of: /api/air-operations/v1/air-operations/api/air/flights/status&quot;/&gt;
+                    &lt;L7p:Detail stringValue=&quot;${invalidRequestPathDetail}&quot;/&gt;
                     &lt;L7p:Level stringValue=&quot;WARNING&quot;/&gt;
                     &lt;L7p:LoggingOnly booleanValue=&quot;true&quot;/&gt;
                 &lt;/L7p:AuditDetailAssertion&gt;
+                &lt;L7p:Encapsulated&gt;
+                    &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6c09148a-e587-46cc-9ada-29a8b1cd0b8d&quot;/&gt;
+                    &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA JSON Error Response&quot;/&gt;
+                    &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue=&quot;gatewayErrorCode&quot;/&gt;
+                            &lt;L7p:value stringValue=&quot;109&quot;/&gt;
+                        &lt;/L7p:entry&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue=&quot;infoListValue&quot;/&gt;
+                            &lt;L7p:value stringValue=&quot;${invalidRequestPathDetail}&quot;/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Parameters&gt;
+                &lt;/L7p:Encapsulated&gt;
                 &lt;L7p:FalseAssertion/&gt;
             &lt;/wsp:All&gt;
         &lt;/wsp:OneOrMore&gt;
@@ -101,6 +1762,7 @@
             &lt;L7p:ResponseContentType stringValue=&quot;text/plain; charset=UTF-8&quot;/&gt;
         &lt;/L7p:HardcodedResponse&gt;
         &lt;L7p:HttpRoutingAssertion&gt;
+            &lt;L7p:Enabled booleanValue=&quot;false&quot;/&gt;
             &lt;L7p:FailOnErrorStatus booleanValue=&quot;false&quot;/&gt;
             &lt;L7p:ProtectedServiceUrl stringValue=&quot;http://${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
             &lt;L7p:ProxyPassword stringValueNull=&quot;null&quot;/&gt;
@@ -130,6 +1792,42 @@
             &lt;/L7p:ResponseHeaderRules&gt;
             &lt;L7p:SamlAssertionVersion intValue=&quot;2&quot;/&gt;
         &lt;/L7p:HttpRoutingAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue=&quot;&quot;/&gt;
+            &lt;L7p:ContentType stringValue=&quot;text/xml; charset=utf-8&quot;/&gt;
+            &lt;L7p:DataType variableDataType=&quot;message&quot;/&gt;
+            &lt;L7p:VariableToSet stringValue=&quot;fakeMessage&quot;/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:Encapsulated&gt;
+            &lt;L7p:EncapsulatedAssertionConfigGuid stringValue=&quot;6a761656-8c5d-4c8c-a386-d7edb7143958&quot;/&gt;
+            &lt;L7p:EncapsulatedAssertionConfigName stringValue=&quot;SWA HTTP(s) Explicit Routing&quot;/&gt;
+            &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;connectionTimeout&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;100&quot;/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;httpMethod&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;${request.http.method}&quot;/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;readTimeout&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;100&quot;/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;requestMessage&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;fakeMessage&quot;/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;routingURL&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;http://${downstream-host}/${downstream-path}${request.url.query}${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
+                &lt;/L7p:entry&gt;
+                &lt;L7p:entry&gt;
+                    &lt;L7p:key stringValue=&quot;useOriginalRequest&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;true&quot;/&gt;
+                &lt;/L7p:entry&gt;
+            &lt;/L7p:Parameters&gt;
+        &lt;/L7p:Encapsulated&gt;
     &lt;/wsp:All&gt;
 &lt;/wsp:Policy&gt;
 </l7:Resource>
@@ -148,6 +1846,39 @@
                     </l7:Properties>
                 </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f167b2e9" srcUri="https://4b344a9cbf4f:18443/restman/1.0/folders/6b799f4eefdfb11df8800690f167b2e9" type="FOLDER"/>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694879" srcUri="https://4b344a9cbf4f:18443/restman/1.0/clusterProperties/6b799f4eefdfb11df8800690f1694879" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="Ignore" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="MapTo">
+                            <l7:StringValue>swa.suppress.json.error.message.description</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f16948c7" srcUri="https://4b344a9cbf4f:18443/restman/1.0/clusterProperties/6b799f4eefdfb11df8800690f16948c7" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f169481a" srcUri="https://4b344a9cbf4f:18443/restman/1.0/policies/6b799f4eefdfb11df8800690f169481a" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694860" srcUri="https://4b344a9cbf4f:18443/restman/1.0/encapsulatedAssertions/6b799f4eefdfb11df8800690f1694860" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694c51" srcUri="https://4b344a9cbf4f:18443/restman/1.0/clusterProperties/6b799f4eefdfb11df8800690f1694c51" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://4b344a9cbf4f:18443/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY">
                     <l7:Properties>
                         <l7:Property key="FailOnNew">
@@ -155,6 +1886,18 @@
                         </l7:Property>
                     </l7:Properties>
                 </l7:Mapping>
+                <l7:Mapping action="Ignore" type="ENCAPSULATED_ASSERTION">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>guid</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="MapTo">
+                            <l7:StringValue>1a5d9437-c67a-4426-b3a8-73697784e0c8</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694a90" srcUri="https://4b344a9cbf4f:18443/restman/1.0/policies/6b799f4eefdfb11df8800690f1694a90" type="POLICY"/>
+                <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694ae7" srcUri="https://4b344a9cbf4f:18443/restman/1.0/encapsulatedAssertions/6b799f4eefdfb11df8800690f1694ae7" type="ENCAPSULATED_ASSERTION"/>
                 <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f167b593" srcUri="https://4b344a9cbf4f:18443/restman/1.0/services/6b799f4eefdfb11df8800690f167b593" type="SERVICE"/>
             </l7:Mappings>
         </l7:Bundle>
