@@ -5,7 +5,7 @@
                     <l7:Name>proto</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f167b2e9</l7:Id>
                     <l7:Type>FOLDER</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.223Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Folder folderId="0000000000000000ffffffffffffec76" id="6b799f4eefdfb11df8800690f167b2e9" version="0">
                             <l7:Name>proto</l7:Name>
@@ -16,11 +16,15 @@
                     <l7:Name>swa.error.codes.json</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f1694879</l7:Id>
                     <l7:Type>CLUSTER_PROPERTY</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.223Z</l7:TimeStamp>
                     <l7:Resource>
-                        <l7:ClusterProperty id="6b799f4eefdfb11df8800690f1694879" version="0">
+                        <l7:ClusterProperty id="6b799f4eefdfb11df8800690f1694879" version="4">
                             <l7:Name>swa.error.codes.json</l7:Name>
                             <l7:Value>{
+   &quot;meta&quot;:{
+      &quot;version&quot;: 2,
+      &quot;lastChange&quot;: &quot;corrected misspelled message for 239 on 11/19/2018&quot;
+   },
    &quot;http&quot;:{
       &quot;400&quot;:{
          &quot;statusText&quot;:&quot;BAD_REQUEST&quot;
@@ -296,7 +300,7 @@
       },
       &quot;239&quot;:{
          &quot;status&quot;:&quot;500&quot;,
-         &quot;message&quot;:&quot;Unkable to generate a Leapfrog Token&quot;,
+         &quot;message&quot;:&quot;Unable to generate a Leapfrog Token&quot;,
          &quot;otk&quot;:&quot;server_error&quot;
       },
       &quot;240&quot;:{
@@ -739,7 +743,7 @@
                     <l7:Name>swa.gateway.tier.identifier</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f16948c7</l7:Id>
                     <l7:Type>CLUSTER_PROPERTY</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.548Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.224Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:ClusterProperty id="6b799f4eefdfb11df8800690f16948c7" version="0">
                             <l7:Name>swa.gateway.tier.identifier</l7:Name>
@@ -751,7 +755,7 @@
                     <l7:Name>SWA JSON Error Response</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f169481a</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.562Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.242Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="96f91b8a-68bb-437c-ba69-3f3734af542f" id="6b799f4eefdfb11df8800690f169481a" version="4">
                             <l7:PolicyDetail folderId="6b799f4eefdfb11df8800690f167b2e9" guid="96f91b8a-68bb-437c-ba69-3f3734af542f" id="6b799f4eefdfb11df8800690f169481a" version="4">
@@ -884,7 +888,7 @@
                     <l7:Name>SWA JSON Error Response</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f1694860</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.577Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.246Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="6b799f4eefdfb11df8800690f1694860" version="0">
                             <l7:Name>SWA JSON Error Response</l7:Name>
@@ -940,7 +944,7 @@
                     <l7:Name>swa.messages.logging.include.http.body</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f1694c51</l7:Id>
                     <l7:Type>CLUSTER_PROPERTY</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.577Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.246Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:ClusterProperty id="6b799f4eefdfb11df8800690f1694c51" version="0">
                             <l7:Name>swa.messages.logging.include.http.body</l7:Name>
@@ -952,7 +956,7 @@
                     <l7:Name>ExplicitAPIRoutingFragment</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f1694a90</l7:Id>
                     <l7:Type>POLICY</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.643Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.511Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Policy guid="8bde0d1e-b730-43f9-bb59-539f54871bda" id="6b799f4eefdfb11df8800690f1694a90" version="2">
                             <l7:PolicyDetail folderId="6b799f4eefdfb11df8800690f167b2e9" guid="8bde0d1e-b730-43f9-bb59-539f54871bda" id="6b799f4eefdfb11df8800690f1694a90" version="2">
@@ -1563,7 +1567,7 @@
                     <l7:Name>SWA HTTP(s) Explicit Routing</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f1694ae7</l7:Id>
                     <l7:Type>ENCAPSULATED_ASSERTION</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.644Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.512Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:EncapsulatedAssertion id="6b799f4eefdfb11df8800690f1694ae7" version="0">
                             <l7:Name>SWA HTTP(s) Explicit Routing</l7:Name>
@@ -1656,10 +1660,34 @@
                     </l7:Resource>
                 </l7:Item>
                 <l7:Item>
+                    <l7:Name>swa.routing.read.timeout</l7:Name>
+                    <l7:Id>63c6d18d4f7daf8fc3afd7f7ca8c698d</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-11-19T21:15:03.512Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="63c6d18d4f7daf8fc3afd7f7ca8c698d" version="0">
+                            <l7:Name>swa.routing.read.timeout</l7:Name>
+                            <l7:Value>70000</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
+                    <l7:Name>swa.routing.connection.timeout</l7:Name>
+                    <l7:Id>63c6d18d4f7daf8fc3afd7f7ca8c6987</l7:Id>
+                    <l7:Type>CLUSTER_PROPERTY</l7:Type>
+                    <l7:TimeStamp>2018-11-19T21:15:03.512Z</l7:TimeStamp>
+                    <l7:Resource>
+                        <l7:ClusterProperty id="63c6d18d4f7daf8fc3afd7f7ca8c6987" version="0">
+                            <l7:Name>swa.routing.connection.timeout</l7:Name>
+                            <l7:Value>5000</l7:Value>
+                        </l7:ClusterProperty>
+                    </l7:Resource>
+                </l7:Item>
+                <l7:Item>
                     <l7:Name>/api/*</l7:Name>
                     <l7:Id>6b799f4eefdfb11df8800690f167b593</l7:Id>
                     <l7:Type>SERVICE</l7:Type>
-                    <l7:TimeStamp>2018-11-15T14:32:12.813Z</l7:TimeStamp>
+                    <l7:TimeStamp>2018-11-19T21:15:03.611Z</l7:TimeStamp>
                     <l7:Resource>
                         <l7:Service id="6b799f4eefdfb11df8800690f167b593" version="2">
                             <l7:ServiceDetail folderId="6b799f4eefdfb11df8800690f167b2e9" id="6b799f4eefdfb11df8800690f167b593" version="2">
@@ -1681,7 +1709,7 @@
         <l7:BooleanValue>false</l7:BooleanValue>
     </l7:Property>
     <l7:Property key="policyRevision">
-        <l7:LongValue>21</l7:LongValue>
+        <l7:LongValue>25</l7:LongValue>
     </l7:Property>
     <l7:Property key="soap">
         <l7:BooleanValue>false</l7:BooleanValue>
@@ -1696,14 +1724,9 @@
                             </l7:ServiceDetail>
                             <l7:Resources>
 <l7:ResourceSet tag="policy">
-    <l7:Resource type="policy" version="20">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+    <l7:Resource type="policy" version="24">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;wsp:Policy xmlns:L7p=&quot;http://www.layer7tech.com/ws/policy&quot; xmlns:wsp=&quot;http://schemas.xmlsoap.org/ws/2002/12/policy&quot;&gt;
     &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
-        &lt;L7p:FaultLevel&gt;
-            &lt;L7p:LevelInfo soapFaultLevel=&quot;included&quot;&gt;
-                &lt;L7p:Level intValue=&quot;4&quot;/&gt;
-            &lt;/L7p:LevelInfo&gt;
-        &lt;/L7p:FaultLevel&gt;
         &lt;wsp:OneOrMore wsp:Usage=&quot;Required&quot;&gt;
             &lt;wsp:All wsp:Usage=&quot;Required&quot;&gt;
                 &lt;L7p:Regex&gt;
@@ -1756,42 +1779,6 @@
             &lt;L7p:Detail stringValue=&quot;About to route to ${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
             &lt;L7p:LoggingOnly booleanValue=&quot;true&quot;/&gt;
         &lt;/L7p:AuditDetailAssertion&gt;
-        &lt;L7p:HardcodedResponse&gt;
-            &lt;L7p:Base64ResponseBody stringValue=&quot;VnJhY2lhbSByZXF1ZXN0LnVybDogJHtyZXF1ZXN0LnVybH0sIHJlcXVlc3QudXJsLnBhdGg6ICR7cmVxdWVzdC51cmwucGF0aH0sIHJlcXVlc3QudXJsLnF1ZXJ5OiAke3JlcXVlc3QudXJsLnF1ZXJ5fSwgcmVxdWVzdC5odHRwLnVyaTogJHtyZXF1ZXN0Lmh0dHAudXJpfSwgcmVxdWVzdC51cmwuZnJhZ21lbnQ6ICR7cmVxdWVzdC51cmwuZnJhZ21lbnR9CmRvd25zdHJlYW0tcGF0aC1waWVjZXM6ICR7ZG93bnN0cmVhbS1wYXRoLXBpZWNlc30KSG93Z2gK&quot;/&gt;
-            &lt;L7p:Enabled booleanValue=&quot;false&quot;/&gt;
-            &lt;L7p:ResponseContentType stringValue=&quot;text/plain; charset=UTF-8&quot;/&gt;
-        &lt;/L7p:HardcodedResponse&gt;
-        &lt;L7p:HttpRoutingAssertion&gt;
-            &lt;L7p:Enabled booleanValue=&quot;false&quot;/&gt;
-            &lt;L7p:FailOnErrorStatus booleanValue=&quot;false&quot;/&gt;
-            &lt;L7p:ProtectedServiceUrl stringValue=&quot;http://${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
-            &lt;L7p:ProxyPassword stringValueNull=&quot;null&quot;/&gt;
-            &lt;L7p:ProxyUsername stringValueNull=&quot;null&quot;/&gt;
-            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
-                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
-                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
-                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
-                        &lt;L7p:Name stringValue=&quot;Cookie&quot;/&gt;
-                    &lt;/L7p:item&gt;
-                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
-                        &lt;L7p:Name stringValue=&quot;SOAPAction&quot;/&gt;
-                    &lt;/L7p:item&gt;
-                &lt;/L7p:Rules&gt;
-            &lt;/L7p:RequestHeaderRules&gt;
-            &lt;L7p:RequestParamRules httpPassthroughRuleSet=&quot;included&quot;&gt;
-                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
-                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;/&gt;
-            &lt;/L7p:RequestParamRules&gt;
-            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet=&quot;included&quot;&gt;
-                &lt;L7p:ForwardAll booleanValue=&quot;true&quot;/&gt;
-                &lt;L7p:Rules httpPassthroughRules=&quot;included&quot;&gt;
-                    &lt;L7p:item httpPassthroughRule=&quot;included&quot;&gt;
-                        &lt;L7p:Name stringValue=&quot;Set-Cookie&quot;/&gt;
-                    &lt;/L7p:item&gt;
-                &lt;/L7p:Rules&gt;
-            &lt;/L7p:ResponseHeaderRules&gt;
-            &lt;L7p:SamlAssertionVersion intValue=&quot;2&quot;/&gt;
-        &lt;/L7p:HttpRoutingAssertion&gt;
         &lt;L7p:SetVariable&gt;
             &lt;L7p:Base64Expression stringValue=&quot;&quot;/&gt;
             &lt;L7p:ContentType stringValue=&quot;text/xml; charset=utf-8&quot;/&gt;
@@ -1804,7 +1791,7 @@
             &lt;L7p:Parameters mapValue=&quot;included&quot;&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;connectionTimeout&quot;/&gt;
-                    &lt;L7p:value stringValue=&quot;100&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;${gateway.swa.routing.connection.timeout}&quot;/&gt;
                 &lt;/L7p:entry&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;httpMethod&quot;/&gt;
@@ -1812,7 +1799,7 @@
                 &lt;/L7p:entry&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;readTimeout&quot;/&gt;
-                    &lt;L7p:value stringValue=&quot;100&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;${gateway.swa.routing.read.timeout}&quot;/&gt;
                 &lt;/L7p:entry&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;requestMessage&quot;/&gt;
@@ -1898,6 +1885,20 @@
                 </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694a90" srcUri="https://4b344a9cbf4f:18443/restman/1.0/policies/6b799f4eefdfb11df8800690f1694a90" type="POLICY"/>
                 <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f1694ae7" srcUri="https://4b344a9cbf4f:18443/restman/1.0/encapsulatedAssertions/6b799f4eefdfb11df8800690f1694ae7" type="ENCAPSULATED_ASSERTION"/>
+                <l7:Mapping action="NewOrExisting" srcId="63c6d18d4f7daf8fc3afd7f7ca8c698d" srcUri="https://4b344a9cbf4f:18443/restman/1.0/clusterProperties/63c6d18d4f7daf8fc3afd7f7ca8c698d" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
+                <l7:Mapping action="NewOrExisting" srcId="63c6d18d4f7daf8fc3afd7f7ca8c6987" srcUri="https://4b344a9cbf4f:18443/restman/1.0/clusterProperties/63c6d18d4f7daf8fc3afd7f7ca8c6987" type="CLUSTER_PROPERTY">
+                    <l7:Properties>
+                        <l7:Property key="MapBy">
+                            <l7:StringValue>name</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:Mapping>
                 <l7:Mapping action="NewOrExisting" srcId="6b799f4eefdfb11df8800690f167b593" srcUri="https://4b344a9cbf4f:18443/restman/1.0/services/6b799f4eefdfb11df8800690f167b593" type="SERVICE"/>
             </l7:Mappings>
         </l7:Bundle>
