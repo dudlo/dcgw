@@ -1820,7 +1820,7 @@
                 &lt;/L7p:entry&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;routingURL&quot;/&gt;
-                    &lt;L7p:value stringValue=&quot;http://${downstream-host}/${downstream-path}${request.url.query}${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
+                    &lt;L7p:value stringValue=&quot;http://${downstream-host}/${downstream-path}${request.url.query}&quot;/&gt;
                 &lt;/L7p:entry&gt;
                 &lt;L7p:entry&gt;
                     &lt;L7p:key stringValue=&quot;useOriginalRequest&quot;/&gt;
